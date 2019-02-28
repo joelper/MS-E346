@@ -37,7 +37,7 @@ def generate_path(policy: Policy, mdp: MDP, num_steps: int) -> Tuple[list, list,
     a_list = []
     r_list = []
 
-    s0 = random.sample(mdp.States, 1)
+    s0 = random.sample(mdp.States, 1).pop()
     s_list.append(s0)
     a0 = action_sampler(policy, s0)
     a_list.append(a0)
@@ -63,7 +63,7 @@ def TD_0(policy: Policy, mdp: MDP, alpha: float, num_epi: int, num_steps: int) -
         v[s] = 0
 
     for i in range(num_epi):
-        s = random(mdp.States)
+        s = random.sample(mdp.States,1).pop()
 
         for j in range(num_steps):
             a = action_sampler(policy, s)
