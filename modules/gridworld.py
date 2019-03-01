@@ -1,6 +1,7 @@
 from typing import Set, Tuple
 from modules.state_action_vars import S, A
 from modules.MDP import MDP
+from modules.DP import convert_reward
 
 
 def is_in_grid(state: Tuple[int, int], size: int) -> bool:
@@ -12,19 +13,19 @@ def get_neighbor_states(s: Tuple[int, int], size: int) -> Set[Tuple[int, int]]:
     # function to return a set of neighboring states in the grid
     nbr_states = set()
 
-    up_state = s[0 ] -1, s[1]
+    up_state = (s[0] -1, s[1])
     if is_in_grid(up_state, size):
         nbr_states.add(up_state)
 
-    down_state = s[0 ] +1, s[1]
+    down_state = (s[0] +1, s[1])
     if is_in_grid(down_state, size):
         nbr_states.add(down_state)
 
-    left_state = s[0], s[1 ] -1
+    left_state = (s[0], s[1] -1)
     if is_in_grid(left_state, size):
         nbr_states.add(left_state)
 
-    right_state = s[0], s[1 ] +1
+    right_state = (s[0], s[1] +1)
     if is_in_grid(right_state, size):
         nbr_states.add(right_state)
 
@@ -91,12 +92,16 @@ def gridworld_rew(States: Set[S], A: Set[A]):
     for s in States:
         R[s] = {}
         for a in A:
-            if s == (0, 0) or s == (3, 3):
-                R[s][a] = 3.
-            elif s == (1, 2):
-                R[s][a] = -2.
-            else:
-                R[s][a] = 0.
+            R[s][a] = {}
+            nbrs = get_neighbor_states(s, 4)
+            nbrs.add(s)
+            for sp in nbrs:
+                if (sp == (0, 0) and (s == (0,1) or s == (1,0))) or (sp == (3, 3) and (s == (3,2) or s == (2,3))):
+                    R[s][a][sp] = 3.0
+                elif sp == (1, 2) and (s == (1,1) or s == (1,3) or s == (2,2) or s == (0,2)):
+                    R[s][a][sp] = -2.0
+                else:
+                    R[s][a][sp] = 0.0
 
     return R
 
@@ -104,5 +109,6 @@ def gridworld_rew(States: Set[S], A: Set[A]):
 def gridworld(gamma: float):
     States, P, A = gridworld_sa()
     R = gridworld_rew(States, A)
+    new_R = convert_reward(R, P)
 
-    return MDP(States, P, A, R, gamma)
+    return MDP(States, P, A, new_R, gamma)
