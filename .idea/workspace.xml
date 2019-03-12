@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11987c81-82d1-4e84-96e6-311b2dd6b3f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/Option.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignments/Assignment_12.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Assignment_12.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/Assignment_7+Project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Assignment_7+Project.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,13 +62,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/RL_prediction.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
               <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/Option.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,6 +146,7 @@
         <option value="$PROJECT_DIR$/modules/gridworld.py" />
         <option value="$PROJECT_DIR$/modules/DP.py" />
         <option value="$PROJECT_DIR$/modules/RL_interface.py" />
+        <option value="$PROJECT_DIR$/modules/Option.py" />
       </list>
     </option>
   </component>
@@ -152,6 +166,11 @@
             <path>
               <item name="MS-E346" type="b2602c69:ProjectViewProjectNode" />
               <item name="MS-E346" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MS-E346" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MS-E346" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -286,12 +305,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551203785117</updated>
-      <workItem from="1551203786540" duration="20173000" />
+      <workItem from="1551203786540" duration="21935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20173000" />
+    <option name="totallyTimeSpent" value="21935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -397,6 +416,16 @@
           <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Option.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
