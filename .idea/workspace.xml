@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11987c81-82d1-4e84-96e6-311b2dd6b3f2" name="Default Changelist" comment="" />
+    <list default="true" id="11987c81-82d1-4e84-96e6-311b2dd6b3f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assignments/.ipynb_checkpoints/Assignment_12-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/.ipynb_checkpoints/Assignment_12-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignments/Assignment_12.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Assignments/Assignment_12.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
